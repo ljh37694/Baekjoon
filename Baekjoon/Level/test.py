@@ -1,9 +1,3 @@
-def combination(n, r):
-    result = 1
-    for j in range(r):
-        result *= n - j
-    for j in range(r):
-        result //= (j + 1)
-    return result
+dp = [[0] * 4 for _ in range(3)]
 
-print(combination(9, 2))
+print(dp)
