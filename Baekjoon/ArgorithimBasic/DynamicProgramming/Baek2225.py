@@ -5,6 +5,11 @@ n, k = map(int, sys.stdin.readline().split())
 
 dp = [1] + [0] * n
 
+for _ in range(1, k + 1):
+    for i in range(1, n + 1):
+        dp[i] = (dp[i] + dp[i - 1]) % 1_000_000_000
+
+print(dp[n])
 """
 dp = [[0] * (n + 1) for _ in range(k + 1)] # dp[k][n]
 
