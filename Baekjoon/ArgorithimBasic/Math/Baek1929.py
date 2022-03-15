@@ -1,3 +1,5 @@
+# 1929 : 소수 구하기
+
 import sys
 
 a, b = map(int, sys.stdin.readline().split())
