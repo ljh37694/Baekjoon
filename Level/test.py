@@ -1,4 +1,1 @@
-s = []
-
-if s:
-    print("YES")
+print(ord("a"))
